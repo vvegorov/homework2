@@ -2,10 +2,11 @@ package ru.digitalhabbits.homework2;
 
 import com.google.common.base.CharMatcher;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
-
-import static java.util.stream.Collectors.partitioningBy;
 
 public class LetterCounterInline extends Thread implements LetterCounter {
     private String input;

@@ -4,13 +4,7 @@ import lombok.SneakyThrows;
 import ru.digitalhabbits.homework2.impl.AsyncFileLetterCounter;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 public class PointInCountLetter {
     private final static File file = new File("/home/lubov/homework_2-multithreading--master/src/test/resources/test.txt");

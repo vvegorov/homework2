@@ -44,7 +44,7 @@ public class AsyncFileLetterCounter implements FileLetterCounter {
             }
         }
 
-//        alm.forEach((l, k) -> System.out.println(l + " =========== " + k));
+        alm.forEach((l, k) -> System.out.println(l + " =========== " + k));
         return alm;
     }
 }
