@@ -1,7 +1,10 @@
 package ru.digitalhabbits.homework2.impl;
 
+import ru.digitalhabbits.homework2.FileLetterCounter;
+import ru.digitalhabbits.homework2.FileReaderService;
+import ru.digitalhabbits.homework2.LetterCounterInline;
+
 import java.io.File;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,10 +12,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
-import ru.digitalhabbits.homework2.FileLetterCounter;
-import ru.digitalhabbits.homework2.FileReaderService;
-import ru.digitalhabbits.homework2.LetterCounterInline;
 
 //todo Make your impl
 public class AsyncFileLetterCounter implements FileLetterCounter {
@@ -45,7 +44,7 @@ public class AsyncFileLetterCounter implements FileLetterCounter {
             }
         }
 
-        alm.forEach((l, k) -> System.out.println(l + " =========== " + k));
+//        alm.forEach((l, k) -> System.out.println(l + " =========== " + k));
         return alm;
     }
 }
