@@ -48,10 +48,4 @@ public class LetterCounterInline extends Thread implements LetterCounter {
 
     }
 
-//    public void printMap()
-//    {
-//        charCount.entrySet().forEach(t -> System.out.println(" t.getKey() >>>> " + t.getKey() + " t.getValue() >>>>>" + t.getValue()));
-//    }
-
-
 }
