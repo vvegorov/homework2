@@ -7,6 +7,6 @@ import java.util.Map;
  */
 public interface LetterCounter {
 
-    Map<Character, Long> count(String input);
+    Map<Character, Integer> count(String input);
 
 }

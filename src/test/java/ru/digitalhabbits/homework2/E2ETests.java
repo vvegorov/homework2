@@ -14,19 +14,19 @@ import ru.digitalhabbits.homework2.impl.AsyncFileLetterCounter;
 public class E2ETests {
 
     @Test
-    void async_file_letter_counting_should_return_predicted_count() {
-        var file = getFile("test.txt");
-        var counter = new AsyncFileLetterCounter();
+    void async_file_letter_counting_should_return_predicted_count() throws InterruptedException {
+        File file = getFile("test.txt");
+        AsyncFileLetterCounter counter = new AsyncFileLetterCounter();
 
-        Map<Character, Long> count = counter.count(file);
+        Map<Character, Integer> count = counter.count(file);
 
         assertThat(count).containsOnly(
-                entry('a', 2697L),
-                entry('b', 2683L),
-                entry('c', 2647L),
-                entry('d', 2613L),
-                entry('e', 2731L),
-                entry('f', 2629L)
+                entry('a', 2697),
+                entry('b', 2683),
+                entry('c', 2647),
+                entry('d', 2613),
+                entry('e', 2731),
+                entry('f', 2629)
         );
     }
 
