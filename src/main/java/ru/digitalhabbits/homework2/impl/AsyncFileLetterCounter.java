@@ -40,7 +40,7 @@ public class AsyncFileLetterCounter implements FileLetterCounter {
 
         for (Map<Character, Integer> map : LetterCounterInline.getOutputList()) {
             for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-                alm.merge(entry.getKey(), entry.getValue(), (oldValue, newValue) -> oldValue + newValue);
+                alm.merge(entry.getKey(), entry.getValue(), Integer::sum);
             }
         }
 
